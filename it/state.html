@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<html lang="it" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Stato e Getter | Tabella dei Contenuti</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./mutations.html" />
+    
+    
+    <link rel="prev" href="./getting-started.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.1"
+        data-chapter-title="Stato e Getter"
+        data-filepath="state.md"
+        data-basepath="."
+        data-revision="Wed Jul 06 2016 01:33:52 GMT-0400 (EDT)"
+        data-innerlanguage="it">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduzione
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="intro.html">
+            
+                
+                    <a href="./intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Che cosa è Vuex?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="getting-started.html">
+            
+                
+                    <a href="./getting-started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Per iniziare
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> Concetti fondamentali</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1" data-path="state.html">
+            
+                
+                    <a href="./state.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Stato e Getter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="mutations.html">
+            
+                
+                    <a href="./mutations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Mutation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="actions.html">
+            
+                
+                    <a href="./actions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Action
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="data-flow.html">
+            
+                
+                    <a href="./data-flow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Flusso dei Dati
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Struttura dell&#39;Applicazione
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="middlewares.html">
+            
+                
+                    <a href="./middlewares.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Middleware
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="strict.html">
+            
+                
+                    <a href="./strict.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Modalità Strict
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="forms.html">
+            
+                
+                    <a href="./forms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Gestione dei Form
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Test del Codice
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="hot-reload.html">
+            
+                
+                    <a href="./hot-reload.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Aggiornamento Automatico
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="api.html">
+            
+                
+                    <a href="./api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Documentazione delle API
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Pubblicato con GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Tabella dei Contenuti</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="stato-e-getter">Stato e Getter</h1>
+<h3 id="albero-a-stato-singolo">Albero a Stato Singolo</h3>
+<p>Vuex utilizza un <strong>albero a stato singolo</strong> - questo singolo oggetto contiene tutti gli stati dell&apos;applicazione e serve come &quot;unica risorsa della verit&#xE0;&quot;. Vuex permette un solo store per applicazione. Un albero a stato singolo permette di localizzare specificatamente un singolo stato, modificarlo, salvarne una copia corrente ed effettuare debug e test.</p>
+<p>Questo principio non va in conflitto con il concetto di modularit&#xE0;, pi&#xF9; avanti capiremo come distribuire lo stato in pi&#xF9; moduli.</p>
+<h3 id="sfruttare-lo-stato-nei-componenti-di-vue">Sfruttare lo Stato nei Componenti di Vue</h3>
+<p>Come visualizziamo lo stato internamente ad un componente Vue? Il modo pi&#xF9; semplice &#xE8; quello di sfruttare le <a href="http://it.vuejs.org/guide/computed.html" target="_blank">propriet&#xE0; derivate</a>:</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// internamente ad un Componente di Vue</span>
+computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  count<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Ogni volta che <code>store.state.count</code> cambia, verr&#xE0; riflesso nella propriet&#xE0; derivata e attiver&#xE0; gli aggiornamenti del DOM necessari.</p>
+<p>Questo metodo, seppur semplice, pu&#xF2; portare ad avere uno o pi&#xF9; componenti che dipendono da un singleton globale, lo store, il quale pu&#xF2; complicare la situazione in fase di test o se si vuole riutilizzare un componente in un&apos;altra applicazione.
+Per evitare questo tipo di problemi, si pu&#xF2; &quot;iniettare&quot; lo store internamente al componente, ecco come fare:</p>
+<ol>
+<li><p>Installato Vuex, collegate il componente principale (root) con lo store:</p>
+<pre><code class="lang-js"><span class="token keyword">import</span> Vue from <span class="token string">&apos;vue&apos;</span>
+<span class="token keyword">import</span> Vuex from <span class="token string">&apos;vuex&apos;</span>
+<span class="token keyword">import</span> store from <span class="token string">&apos;./store&apos;</span>
+<span class="token keyword">import</span> MyComponent from <span class="token string">&apos;./MyComponent&apos;</span>
+
+<span class="token comment" spellcheck="true">// Questo passo &#xE8; fondamentale in quando dice a vue</span>
+<span class="token comment" spellcheck="true">// Come comportarti con le opzioni relative a Vuex.</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+ el<span class="token punctuation">:</span> <span class="token string">&apos;#app&apos;</span><span class="token punctuation">,</span>
+ <span class="token comment" spellcheck="true">// Iniettiamo lo store direttamente nel componente</span>
+ <span class="token comment" spellcheck="true">// Cos&#xEC; facendo sar&#xE0; disponibile a tutti i componenti figli</span>
+ store<span class="token punctuation">,</span>
+ components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   MyComponent
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Iniettando lo store direttamente al componente principale, tutti i figli ne beneficeranno e lo store sar&#xE0; disponibile tramite la propriet&#xE0; <code>this.$store</code>. Comunque non &#xE8; necessario utilizzare la referenza diretta:</p>
+</li>
+<li><p>Internamente al componente figlio, possiamo sfruttare una funzione <strong>getter</strong> e farci restituire l&apos;opzione <code>vuex.getters</code>:</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// MyComponent.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+ template<span class="token punctuation">:</span> <span class="token string">&apos;...&apos;</span><span class="token punctuation">,</span>
+ data <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token comment" spellcheck="true">// Qui e dove lavoriamo con Vuex</span>
+ vuex<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   getters<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+     <span class="token comment" spellcheck="true">// Questo getter legher&#xE0; `store.state.count` al componente tramite `this.count`</span>
+     count<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">return</span> state<span class="token punctuation">.</span>count
+     <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Si noti la sintassi speciale <code>vuex</code>. Al suo interno si specificano gli stati che il componente deve utilizzare dallo store. Per ogni propriet&#xE0; dello store specificheremo un getter il quale riceve tutto l&apos;albero degli stati dallo store
+e seleziona solo lo stato che specifichiamo noi il valore verr&#xE0; inserito in una properit&#xE0; del componente, proprio come una propriet&#xE0; derivata.</p>
+<p>In molti casi si pu&#xF2; semplificare la sintassi del &quot;getter&quot; tramite ES2015:</p>
+<pre><code class="lang-js">vuex<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+ getters<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   count<span class="token punctuation">:</span> state <span class="token operator">=</span><span class="token operator">&gt;</span> state<span class="token punctuation">.</span>count
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="i-getter-devono-essere-puri">I Getter devono essere Puri</h3>
+<p>Tutti i getter Vuex devono essere <a href="https://en.wikipedia.org/wiki/Pure_function" target="_blank">delle funzioni pure</a> - esse devono prendere l&apos;intero albero degli stati e restituire solo e soltanto un valore di tale stato. Questo rende il tutto pi&#xF9; facile da modularizzare, testare e comporre. Significa anche che <strong>non potrete usare <code>this</code> nei getter</strong>.</p>
+<p>Se vi ritrovate nella situazione di dover usare <code>this</code>, per esempio per elaborare una properit&#xE0; derivata basata su uno stato locale del componente, allora dovrete definire un&apos;altra propriet&#xE0; derivata dedicata:</p>
+<pre><code class="lang-js">vuex<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    currentId<span class="token punctuation">:</span> state <span class="token operator">=</span><span class="token operator">&gt;</span> state<span class="token punctuation">.</span>currentId
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  isCurrent <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">===</span> <span class="token keyword">this</span><span class="token punctuation">.</span>currentId
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="i-getter-possono-restituire-stati-derivati">I Getter possono restituire Stati Derivati</h3>
+<p>Se consideriamo che i getter di Vuex dietro le quinte sono delle propriet&#xE0; derivate, allora possiamo intuire che &#xE8; possibile sfruttare alcune propriet&#xE0; di quest&apos;ultime per restituire uno stato pi&#xF9; eleborato.
+Per esempio, si consideri che lo stato ha un array di <code>messaggi</code> contenente tutti i messaggi, ed un <code>currentThreadID</code> che rappresenta il thread corrente visualizzato dall utente.
+Ora, mettiamo caso di voler visualizzare tutti i messaggi che sono associati ad un Thread particolare:</p>
+<pre><code class="lang-js">vuex<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    filteredMessages<span class="token punctuation">:</span> state <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> state<span class="token punctuation">.</span>messages<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>message <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> message<span class="token punctuation">.</span>threadID <span class="token operator">===</span> state<span class="token punctuation">.</span>currentThreadID
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Dato che le propriet&#xE0; derivate di Vue.js sono messe in cache in modo automatico, non dovremo preoccuparci di chiamare questo metodo ad ogni mutazione dello stato!</p>
+<h3 id="condividere-dei-getter-su-pi&#xF9;-componenti">Condividere dei Getter su pi&#xF9; Componenti</h3>
+<p>Come potete notare <code>filteredMessages</code> pu&#xF2; essere utile in pi&#xF9; componenti. In questo caso &#xE8; buona idea esportare il metodo e condividerlo su pi&#xF9; componenti:</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// getters.js</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> filteredMessages <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> state<span class="token punctuation">.</span>messages<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>message <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> message<span class="token punctuation">.</span>threadID <span class="token operator">===</span> state<span class="token punctuation">.</span>currentThreadID
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// In un componente..</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> filteredMessages <span class="token punctuation">}</span> from <span class="token string">&apos;./getters&apos;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  vuex<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    getters<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      filteredMessages
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Grazie al fatto che i Getter sono puri, tutti i getter possono essere condivisi tra i componenti e cachati in modo molto convenzionale: quando una dipendenza cambia viene rievalutata una sola volta per tutti i componenti!</p>
+<blockquote>
+<p>Referenza a Flux: I getter di Vuex sono simili a <a href="https://github.com/rackt/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options" target="_blank"><code>mapStateToProps</code></a> in Redux. Comounque dato che ci si appoggia al sistema di propriet&#xE0; derivate di Vue, c&apos;&#xE8; una netta differenza di prestazioni a favore di Vuex, troviamo pi&#xF9; similitudini a <a href="https://github.com/reactjs/reselect" target="_blank">reselect</a>.</p>
+</blockquote>
+<h3 id="i-componenti-non-possono-mutare-gli-stati">I Componenti Non Possono Mutare gli Stati</h3>
+<p>E&apos; importante ricordare che <strong>i componenti non dovrebbero mai mutare uno stato in Vuex in modo diretto</strong>. Ogni stato dev&apos;essere mutato in modo esplicito e tracciabile, possibilmente sfruttando il sistema mutations di Vuex stesso.</p>
+<p>Per aiutare a rispettare questa regola, se in <a href="strict.html">Modalit&#xE0; Strict</a>, Vuex lancier&#xE0; un errore se si prova a mutare uno stato in modo diretto.</p>
+<p>Con questa regola i vostri componenti in Vue avranno meno responsabilit&#xE0;: essi sono legati allo Store di Vuex in modalit&#xE0; sola lettura tramite i getter, l&apos;unico modo per cambiare lo stato in qualsiasi modo &#xE8; attivando le <strong>mutations</strong> (ne parleremo dopo). Il vantaggio &#xE8; che i componenti potranno continuare ad operare sui loro stati locali se necessario ma senza doversi preoccupare di gestire la logica per gli stati globali dell&apos;applicazione dato che, quest&apos;ultimi, sono centralizzati internamente in Vuex.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./getting-started.html" class="navigation navigation-prev " aria-label="Previous page: Per iniziare"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./mutations.html" class="navigation navigation-next " aria-label="Next page: Mutation"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vuex/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vuex/"},"prism":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

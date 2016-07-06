@@ -1,0 +1,522 @@
+<!DOCTYPE HTML>
+<html lang="es" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Mutaciones | Tabla de contenidos</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./actions.html" />
+    
+    
+    <link rel="prev" href="./state.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.2"
+        data-chapter-title="Mutaciones"
+        data-filepath="mutations.md"
+        data-basepath="."
+        data-revision="Wed Jul 06 2016 01:33:52 GMT-0400 (EDT)"
+        data-innerlanguage="es">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introducción
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="intro.html">
+            
+                
+                    <a href="./intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Qué es Vuex?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="getting-started.html">
+            
+                
+                    <a href="./getting-started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Empezando
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="tutorial.html">
+            
+                
+                    <a href="./tutorial.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Tutorial
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Conceptos Básicos</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="state.html">
+            
+                
+                    <a href="./state.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Estado y Obtenedores
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="mutations.html">
+            
+                
+                    <a href="./mutations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Mutaciones
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="actions.html">
+            
+                
+                    <a href="./actions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Acciones
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="data-flow.html">
+            
+                
+                    <a href="./data-flow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Flujo de datos
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Estructura de la Aplicación
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="middlewares.html">
+            
+                
+                    <a href="./middlewares.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Middlewares
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="strict.html">
+            
+                
+                    <a href="./strict.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Modo estricto
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="forms.html">
+            
+                
+                    <a href="./forms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Manejo de formularios
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Probando
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="hot-reload.html">
+            
+                
+                    <a href="./hot-reload.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Recarga en caliente
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="api.html">
+            
+                
+                    <a href="./api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Referencia API
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Publicado con GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Tabla de contenidos</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="mutaciones">Mutaciones</h1>
+<p>Las mutaciones Vuex son esencialmente eventos: cada mutaci&#xF3;n tiene un <strong>nombre</strong> y un <strong>manejador</strong>. La funci&#xF3;n del manejador recibir&#xE1; el estado como el primer argumento:</p>
+<pre><code class="lang-js"><span class="token keyword">import</span> Vuex from <span class="token string">&apos;vuex&apos;</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    INCREMENT <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// mutar estado</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>El uso de may&#xFA;sculas para los nombres de mutaci&#xF3;n es s&#xF3;lo una convenci&#xF3;n para que sea m&#xE1;s f&#xE1;cil diferenciarlos de las funciones planas.</p>
+<p>No puedes llamar directamente a un manejador de mutaci&#xF3;n. Las opciones aqu&#xED; son m&#xE1;s bien un registro de eventos: &quot;Cuando un evento <code>INCREMENT</code> es despachado, llama a este manejador.&quot; Para invocar un manejador de mutaci&#xF3;n, es necesario despachar un evento de mutaci&#xF3;n:</p>
+<pre><code class="lang-js">store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&apos;INCREMENT&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="despachar-con-argumentos">Despachar con argumentos</h3>
+<p>Tambi&#xE9;n es posible pasar argumentos:</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// ...</span>
+mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  INCREMENT <span class="token punctuation">(</span>state<span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>count <span class="token operator">+</span><span class="token operator">=</span> n
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre><code class="lang-js">store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&apos;INCREMENT&apos;</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Aqu&#xED; <code>10</code> ser&#xE1; pasado al controlador de la mutaci&#xF3;n como el segundo argumento siguiendo <code>state</code>. Lo mismo para cualquier argumento adicional. Estos argumentos se denominan <strong>carga &#xFA;til</strong> o &quot;payload&quot; para la mutaci&#xF3;n dada.</p>
+<h3 id="despacho-al-estilo-objeto">Despacho al estilo objeto</h3>
+<blockquote>
+<p>requiere &gt;=0.6.2</p>
+</blockquote>
+<p>Tambi&#xE9;n puedes despachar mutaciones utilizando objetos:</p>
+<pre><code class="lang-js">store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">&apos;INCREMENT&apos;</span><span class="token punctuation">,</span>
+  payload<span class="token punctuation">:</span> <span class="token number">10</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Ten en cuenta que cuando uses el estilo objeto debes incluir todos los argumentos como propiedades en el objeto despachado. El objeto entero ser&#xE1; pasado como el segundo argumento a los manipuladores de mutaci&#xF3;n:</p>
+<pre><code class="lang-js">mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  INCREMENT <span class="token punctuation">(</span>state<span class="token punctuation">,</span> mutation<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>count <span class="token operator">+</span><span class="token operator">=</span> mutation<span class="token punctuation">.</span>payload
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="despacho-silencioso">Despacho silencioso</h3>
+<blockquote>
+<p>requiere &gt;=0.6.3</p>
+</blockquote>
+<p>En algunos casos puede que no desees que los middlewares registren el cambio de estado. M&#xFA;ltiples despachos al almac&#xE9;n en un per&#xED;odo corto o encuestados no siempre tienen que ser rastreados. En estas situaciones puede considerarse apropiado silenciar las mutaciones.</p>
+<p><em>Nota:</em> Esto deber&#xED;a evitarse cuando sea necesario. Las mutaciones silenciosas rompen el contrato de todos los cambios de estado siendo rastreados por el devtool. Utilizar con moderaci&#xF3;n y cuando sea absolutamente necesario.</p>
+<p>Despachar sin golpear middlewares se puede lograr con un indicador <code>silent</code>.</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">/**
+ * Ejemplo: Acci&#xF3;n de progreso.
+ * Despacha a menudo cambios que no necesariamente deben ser rastreados
+ **/</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">start</span><span class="token punctuation">(</span>store<span class="token punctuation">,</span> options <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> INCREMENT<span class="token punctuation">,</span>
+      silent<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">,</span>
+      payload<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        amount<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>progress <span class="token operator">===</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">clearInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="las-mutaciones-siguen-las-reglas-de-reactividad-de-vue">Las mutaciones siguen las reglas de reactividad de Vue</h3>
+<p>Dado que el estado de almacenes Vuex es hecho reactivo por Vue, cuando mutamos el estado, componentes Vue que est&#xE9;n observando el estado se actualizar&#xE1;n autom&#xE1;ticamente. Esto tambi&#xE9;n significa que las mutaciones Vuex est&#xE1;n sujetas a las mismas advertencias de reactividad que cuando se trabaja con Vue a secas:</p>
+<ol>
+<li><p>Prefiere inicializar el estado inicial de tu almac&#xE9;n con todos los campos deseados por adelantado.</p>
+</li>
+<li><p>Cuando se a&#xF1;aden nuevas propiedades a un Objeto, deber&#xE1;s:</p>
+<ul>
+<li><p>Usar <code>Vue.set(obj, &apos;newProp&apos;, 123)</code>, o -</p>
+</li>
+<li><p>Sustituir ese Objeto con uno nuevo. Por ejemplo, usando la etapa-2 <a href="https://github.com/sebmarkbage/ecmascript-rest-spread" target="_blank">sintaxis de objetos de propagaci&#xF3;n</a> podemos escribirla as&#xED;:</p>
+</li>
+</ul>
+<pre><code class="lang-js">state<span class="token punctuation">.</span>obj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>obj<span class="token punctuation">,</span> newProp<span class="token punctuation">:</span> <span class="token number">123</span> <span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="usando-constantes-para-los-nombres-de-mutaci&#xF3;n">Usando constantes para los nombres de mutaci&#xF3;n</h3>
+<p>Tambi&#xE9;n es com&#xFA;n el uso de constantes para los nombres de mutaci&#xF3;n - permiten al c&#xF3;digo tomar ventaja de herramientas como linters, y poniendo todas las constantes en un archivo &#xFA;nico permite a tus colaboradores obtener de un vistazo qu&#xE9; mutaciones son posibles en toda la aplicaci&#xF3;n:</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// mutation-types.js</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> SOME_MUTATION <span class="token operator">=</span> <span class="token string">&apos;SOME_MUTATION&apos;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// store.js</span>
+<span class="token keyword">import</span> Vuex from <span class="token string">&apos;vuex&apos;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> SOME_MUTATION <span class="token punctuation">}</span> from <span class="token string">&apos;./mutation-types&apos;</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// podemos utilizar la funci&#xF3;n nombre de propiedad computerizada del ES2015</span>
+    <span class="token comment" spellcheck="true">// para usar una constante como el nombre de la funci&#xF3;n</span>
+    <span class="token punctuation">[</span>SOME_MUTATION<span class="token punctuation">]</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// mutar estado</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Utilizar constantes es en gran parte una preferencia - puede ser &#xFA;til en grandes proyectos con muchos desarrolladores, pero es totalmente opcional si no te gustan.</p>
+<h3 id="las-mutaciones-deben-ser-s&#xED;ncronas">Las mutaciones deben ser s&#xED;ncronas</h3>
+<p>Una regla importante a recordar es que <strong>las funciones de controlador de mutaci&#xF3;n deben ser s&#xED;ncronas</strong>. &#xBF;Por qu&#xE9;? Considera el siguiente ejemplo:</p>
+<pre><code class="lang-js">mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  SOME_MUTATION <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    api<span class="token punctuation">.</span><span class="token function">callAsyncMethod</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Ahora imaginemos que estamos depurando la app y mirando nuestros registros de mutaci&#xF3;n. Por cada mutaci&#xF3;n anotada, queremos ser capaces de comparar capturas de estado <em>antes</em> y <em>despu&#xE9;s</em> de la mutaci&#xF3;n. Sin embargo, la retrollamada as&#xED;ncrona dentro de la mutaci&#xF3;n del ejemplo anterior lo hace imposible: la retrollamada no es ejecutada todav&#xED;a cuando la mutaci&#xF3;n es despachada, y no sabemos cu&#xE1;ndo la retrollamada ser&#xE1; realmente ejecutada. Cualquier mutaci&#xF3;n de estado realizada en la retrollamada es esencialmente no rastreable!</p>
+<h3 id="sobre-acciones">Sobre acciones</h3>
+<p>Asincron&#xED;a combinada con mutaci&#xF3;n de estado puede hacer que tu programa sea muy dif&#xED;cil de razonar. Por ejemplo, cuando llames a dos m&#xE9;todos los dos con devoluciones de llamada as&#xED;ncronas que mutan el estado, &#xBF;c&#xF3;mo sabes cuando son llamadas y cual retrollamada se ejecut&#xF3; primero? Esto es exactamente por lo que queremos separar los dos conceptos. En Vuex, llevamos a cabo todas las mutaciones de estado de manera s&#xED;ncrona. Realizaremos todas las operaciones as&#xED;ncronas dentro de <a href="actions.html">acciones</a>.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./state.html" class="navigation navigation-prev " aria-label="Previous page: Estado y Obtenedores"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./actions.html" class="navigation navigation-next " aria-label="Next page: Acciones"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vuex/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vuex/"},"prism":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

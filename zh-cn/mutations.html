@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Mutations（状态变更） | 目录</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./actions.html" />
+    
+    
+    <link rel="prev" href="./state.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.2"
+        data-chapter-title="Mutations（状态变更）"
+        data-filepath="mutations.md"
+        data-basepath="."
+        data-revision="Wed Jul 06 2016 01:33:51 GMT-0400 (EDT)"
+        data-innerlanguage="zh-cn">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="intro.html">
+            
+                
+                    <a href="./intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        什么是 Vuex?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="getting-started.html">
+            
+                
+                    <a href="./getting-started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        准备开始
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="tutorial.html">
+            
+                
+                    <a href="./tutorial.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        简易教程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 核心概念</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="state.html">
+            
+                
+                    <a href="./state.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        State 和 Getters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="mutations.html">
+            
+                
+                    <a href="./mutations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Mutations（状态变更）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="actions.html">
+            
+                
+                    <a href="./actions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Actions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="data-flow.html">
+            
+                
+                    <a href="./data-flow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        数据流
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        应用结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="middlewares.html">
+            
+                
+                    <a href="./middlewares.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        中间件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="strict.html">
+            
+                
+                    <a href="./strict.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        严格模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="forms.html">
+            
+                
+                    <a href="./forms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        表单处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="hot-reload.html">
+            
+                
+                    <a href="./hot-reload.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        热重载
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="api.html">
+            
+                
+                    <a href="./api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        API 参考文档
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >目录</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="mutations">Mutations</h1>
+<p>Mutations &#x672C;&#x8D28;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF1A;&#x6BCF;&#x4E2A; mutation &#x90FD;&#x6709;&#x4E00;&#x4E2A; <strong>&#x4E8B;&#x4EF6;&#x540D; (name)</strong> &#x548C; &#x4E00;&#x4E2A; <strong>&#x56DE;&#x8C03;&#x51FD;&#x6570; (handler)</strong>. &#x4EFB;&#x4F55;&#x4E00;&#x4E2A; Mutation handler &#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x6C38;&#x8FDC;&#x4E3A;&#x6240;&#x5C5E; store &#x7684;&#x6574;&#x4E2A; state &#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="token keyword">import</span> Vuex from <span class="token string">&apos;vuex&apos;</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    INCREMENT <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// &#x6539;&#x53D8; state</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x7528;&#x5168;&#x90E8;&#x5927;&#x5199;&#x547D;&#x540D; mutation &#x662F;&#x4E00;&#x4E2A;&#x60EF;&#x4F8B;&#xFF0C;&#x65B9;&#x4FBF;&#x5C06;&#x5B83;&#x548C; actions &#x533A;&#x5206;&#x5F00;&#x3002;</p>
+<p>&#x4F60;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8C03;&#x7528; mutation handler. &#x8FD9;&#x91CC;&#x4F20;&#x5165; Store &#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x9009;&#x9879;&#x66F4;&#x50CF;&#x662F;&#x5728;&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;&#xFF1A;&#x300E;&#x5F53; <code>INCREMENT</code> &#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x8FD9;&#x4E2A; handler&#x300F;&#x3002;&#x89E6;&#x53D1; mutation handler &#x7684;&#x65B9;&#x6CD5;&#x662F; dispatch &#x4E00;&#x4E2A; mutation &#x7684;&#x4E8B;&#x4EF6;&#x540D;&#xFF1A;</p>
+<pre><code class="lang-js">store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&apos;INCREMENT&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x5E26;&#x53C2;&#x6570;&#x7684;-dispatch">&#x5E26;&#x53C2;&#x6570;&#x7684; dispatch</h3>
+<p><code>store.dispatch</code> &#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// ...</span>
+mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  INCREMENT <span class="token punctuation">(</span>state<span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>count <span class="token operator">+</span><span class="token operator">=</span> n
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre><code class="lang-js">store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&apos;INCREMENT&apos;</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684; <code>10</code> &#x4F1A;&#x7D27;&#x8DDF;&#x7740; <code>state</code> &#x4F5C;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x88AB;&#x4F20;&#x9012;&#x5230; mutation handler. &#x6240;&#x6709;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#x88AB;&#x79F0;&#x4E3A;&#x8BE5; mutation &#x7684; payload.</p>
+<h3 id="object-&#x98CE;&#x683C;&#x7684;-dispatch">Object &#x98CE;&#x683C;&#x7684; Dispatch</h3>
+<blockquote>
+<p>&#x9700;&#x8981;&#x7248;&#x672C; &gt;=0.6.2</p>
+</blockquote>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x5BF9;&#x8C61;&#x6765; dispatch mutation &#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-js">store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">&apos;INCREMENT&apos;</span><span class="token punctuation">,</span>
+  payload<span class="token punctuation">:</span> <span class="token number">10</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5F53;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x98CE;&#x683C;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x628A;&#x5168;&#x90E8;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x4F20;&#x5165;&#x3002;&#x6574;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x88AB;&#x4F5C;&#x4E3A; mutation &#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x88AB;&#x4F20;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-js">mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  INCREMENT <span class="token punctuation">(</span>state<span class="token punctuation">,</span> mutation<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>count <span class="token operator">+</span><span class="token operator">=</span> mutation<span class="token punctuation">.</span>payload
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="mutations-&#x5E94;&#x5F53;&#x9075;&#x5B88;-vue-&#x7684;&#x54CD;&#x5E94;&#x7CFB;&#x7EDF;&#x89C4;&#x5219;">Mutations &#x5E94;&#x5F53;&#x9075;&#x5B88; Vue &#x7684;&#x54CD;&#x5E94;&#x7CFB;&#x7EDF;&#x89C4;&#x5219;</h3>
+<p>&#x7531;&#x4E8E; Vuex store &#x5185;&#x90E8;&#x7684; state &#x5BF9;&#x8C61;&#x88AB; Vue &#x6539;&#x9020;&#x6210;&#x4E86;&#x54CD;&#x5E94;&#x5F0F;&#x5BF9;&#x8C61;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5BF9; state &#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x4EFB;&#x4F55;&#x89C2;&#x6D4B;&#x7740; state &#x7684; Vue &#x7EC4;&#x4EF6;&#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x5730;&#x66F4;&#x65B0;&#x3002;&#x4F46;&#x540C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E5F;&#x610F;&#x5473;&#x7740;&#x5728; Vuex &#x7684; mutation handler &#x4E2D;&#x4FEE;&#x6539;&#x72B6;&#x6001;&#x65F6;&#x4E5F;&#x9700;&#x8981;&#x9075;&#x5FAA; Vue &#x7279;&#x6709;&#x7684;&#x4E00;&#x4E9B;&#x6CE8;&#x610F;&#x70B9;&#xFF1A;</p>
+<ol>
+<li><p>&#x5C3D;&#x53EF;&#x80FD;&#x5728;&#x521B;&#x5EFA; store &#x65F6;&#x5C31;&#x521D;&#x59CB;&#x5316; state &#x6240;&#x9700;&#x8981;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#xFF1B;&#xFF08;&#x5C31;&#x50CF;&#x521B;&#x5EFA; Vue &#x5B9E;&#x4F8B;&#x65F6;&#x5E94;&#x5F53;&#x521D;&#x59CB;&#x5316; <code>data</code> &#x4E00;&#x6837;&#xFF09;</p>
+</li>
+<li><p>&#x5F53;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x539F;&#x672C;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#xFF1A;</p>
+<ul>
+<li><p>&#x4F7F;&#x7528; <code>Vue.set(obj, &apos;newProp&apos;, 123)</code>&#xFF1B;&#x6216;&#x8005; -</p>
+</li>
+<li><p>&#x62F7;&#x8D1D;&#x5E76;&#x66FF;&#x6362;&#x539F;&#x672C;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x5229;&#x7528; stage 2 &#x7684;&#x8BED;&#x8A00;&#x7279;&#x6027; <a href="https://github.com/sebmarkbage/ecmascript-rest-spread" target="_blank">object spread syntax</a>&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x8BED;&#x6CD5;:</p>
+<pre><code class="lang-js">state<span class="token punctuation">.</span>obj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>obj<span class="token punctuation">,</span> newProp<span class="token punctuation">:</span> <span class="token number">123</span> <span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="&#x7528;&#x5E38;&#x91CF;&#x4E3A;-mutations-&#x547D;&#x540D;">&#x7528;&#x5E38;&#x91CF;&#x4E3A; Mutations &#x547D;&#x540D;</h3>
+<p>&#x4E3A;&#x4E86;&#x53EF;&#x4EE5;&#x4F7F; linters &#x4E4B;&#x7C7B;&#x7684;&#x5DE5;&#x5177;&#x53D1;&#x6325;&#x4F5C;&#x7528;&#xFF0C;&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5E38;&#x91CF;&#x53BB;&#x547D;&#x540D;&#x4E00;&#x4E2A; mutation, &#x5E76;&#x4E14;&#x628A;&#x8FD9;&#x4E9B;&#x5E38;&#x91CF;&#x653E;&#x5728;&#x5355;&#x72EC;&#x7684;&#x5730;&#x65B9;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x5408;&#x4F5C;&#x8005;&#x5BF9;&#x6574;&#x4E2A; app &#x5305;&#x542B;&#x7684; mutations &#x4E00;&#x76EE;&#x4E86;&#x7136;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// mutation-types.js</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> SOME_MUTATION <span class="token operator">=</span> <span class="token string">&apos;SOME_MUTATION&apos;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// store.js</span>
+<span class="token keyword">import</span> Vuex from <span class="token string">&apos;vuex&apos;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> SOME_MUTATION <span class="token punctuation">}</span> from <span class="token string">&apos;./mutation-types&apos;</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// we can use the ES2015 computed property name feature</span>
+    <span class="token comment" spellcheck="true">// to use a constant as the function name</span>
+    <span class="token punctuation">[</span>SOME_MUTATION<span class="token punctuation">]</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// mutate state</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x7528;&#x4E0D;&#x7528;&#x5E38;&#x91CF;&#x53D6;&#x51B3;&#x4E8E;&#x4F60; &#x2014;&#x2014; &#x5728;&#x9700;&#x8981;&#x591A;&#x4EBA;&#x534F;&#x4F5C;&#x7684;&#x5927;&#x578B;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x8FD9;&#x4F1A;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#x3002;&#x4F46;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x559C;&#x6B22;&#xFF0C;&#x4F60;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x4E0D;&#x8FD9;&#x6837;&#x505A;&#x3002;</p>
+<h3 id="mutation-&#x5FC5;&#x987B;&#x662F;&#x540C;&#x6B65;&#x51FD;&#x6570;">mutation &#x5FC5;&#x987B;&#x662F;&#x540C;&#x6B65;&#x51FD;&#x6570;</h3>
+<p>&#x4E00;&#x6761;&#x91CD;&#x8981;&#x7684;&#x539F;&#x5219;&#x5C31;&#x662F;&#x8981;&#x8BB0;&#x4F4F;<strong> mutation &#x5FC5;&#x987B;&#x662F;&#x540C;&#x6B65;&#x51FD;&#x6570;</strong>&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x8BF7;&#x53C2;&#x8003;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  SOME_MUTATION <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    api<span class="token punctuation">.</span><span class="token function">callAsyncMethod</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x73B0;&#x5728;&#x60F3;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x6B63;&#x5728; debug &#x4E00;&#x4E2A; app &#x5E76;&#x4E14;&#x89C2;&#x5BDF;&#x6211;&#x4EEC;&#x7684; mutation &#x65E5;&#x5FD7;&#x3002;&#x6BCF;&#x4E00;&#x6761; mutation &#x88AB;&#x8BB0;&#x5F55;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x60F3;&#x8981;&#x80FD;&#x591F;&#x5C06;&#x5FEB;&#x7167;&#x4E2D;&#x524D;&#x4E00;&#x72B6;&#x6001;&#x548C;&#x540E;&#x4E00;&#x72B6;&#x6001;&#x5BF9;&#x6BD4;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D; mutation &#x4E2D;&#x7684;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x56DE;&#x8C03;&#x8BA9;&#x8FD9;&#x4E0D;&#x53EF;&#x80FD;&#x5B8C;&#x6210;&#xFF1A;&#x56E0;&#x4E3A;&#x5F53; mutation &#x89E6;&#x53D1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x56DE;&#x6389;&#x51FD;&#x6570;&#x8FD8;&#x6CA1;&#x6709;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5B9E;&#x9645;&#x4E0A;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x5B9E;&#x8D28;&#x4E0A;&#x4EFB;&#x4F55;&#x5728;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E2D;&#x8FDB;&#x884C;&#x7684;&#x7684;&#x72B6;&#x6001;&#x7684;&#x6539;&#x53D8;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x8FFD;&#x8E2A;&#x7684;&#x3002;</p>
+<h3 id="&#x4E0B;&#x4E00;&#x6B65;&#xFF1A;actions">&#x4E0B;&#x4E00;&#x6B65;&#xFF1A;Actions</h3>
+<p>&#x5728; mutation &#x4E2D;&#x6DF7;&#x5408;&#x5F02;&#x6B65;&#x8C03;&#x7528;&#x4F1A;&#x5BFC;&#x81F4;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x5F88;&#x96BE;&#x8C03;&#x8BD5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x4F60;&#x80FD;&#x8C03;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x5305;&#x542B;&#x5F02;&#x6B65;&#x56DE;&#x8C03;&#x7684; mutation &#x6765;&#x6539;&#x53D8;&#x72B6;&#x6001;&#xFF0C;&#x4F60;&#x600E;&#x4E48;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x56DE;&#x8C03;&#x548C;&#x54EA;&#x4E2A;&#x5148;&#x56DE;&#x8C03;&#x5462;&#xFF1F;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x8981;&#x533A;&#x5206;&#x8FD9;&#x4E24;&#x4E2A;&#x6982;&#x5FF5;&#x3002;&#x5728; Vuex &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5168;&#x90E8;&#x7684;&#x6539;&#x53D8;&#x90FD;&#x7528;&#x540C;&#x6B65;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5168;&#x90E8;&#x7684;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x90FD;&#x653E;&#x5728;<a href="actions.html">Actions</a>&#x4E2D;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./state.html" class="navigation navigation-prev " aria-label="Previous page: State 和 Getters"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./actions.html" class="navigation navigation-next " aria-label="Next page: Actions"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vuex/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vuex/"},"prism":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
